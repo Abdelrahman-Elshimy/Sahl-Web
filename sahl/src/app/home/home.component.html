@@ -1,0 +1,167 @@
+<app-header></app-header>
+
+<section class="home">
+  <div class="container">
+    <div class="row search-bar">
+      <div class="col-md-12">
+        <div class="input-group">
+          <div class="input-group-btn search-panel">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+              <span class="glyphicon glyphicon-th-large" aria-hidden="true"></span> <span id="search_concept">Filter
+                by</span>
+            </button>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#contains">Contains</a></li>
+              <li><a href="#its_equal">It's equal</a></li>
+              <li><a href="#greather_than">Greather than ></a></li>
+              <li><a href="#less_than">Less than < </a> </li> <li class="divider">
+              </li>
+              <li><a href="#all">Anything</a></li>
+            </ul>
+          </div>
+          <input type="hidden" name="search_param" value="all" id="search_param">
+          <input type="text" class="form-control" name="x" placeholder="Search item...">
+          <span class="input-group-btn search-icons-one">
+            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="row row1">
+
+      <div class="col-md-4 col-sm-6" *ngFor="let cat of cats">
+        <div>
+          <a routerLink="category/{{cat.catname}}">
+            <img src="assets/branches/{{cat.catname}}.png" alt="Clothes">
+            <span>{{cat.catname}}</span>
+          </a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+<!-- end category section -->
+<!-- start new brands section -->
+<section class="new-brand">
+  <div class="container">
+    <h3 class="head-title">
+      <img src="assets/brands/megaphone.png" alt="Ads">
+      New brands
+    </h3>
+    <hr>
+    <div class="row">
+      <div class="col-md-4 col-sm-6" *ngFor="let brand of brands">
+        <div class="box-brand">
+          <div class="boxs-brand"></div>
+          <div class="boxs-brand"></div>
+          <div class="boxs-brand"></div>
+          <div class="boxs-brand"></div>
+          <div class="content-brand">
+            <div class="brand-logo-box">
+              <img src="assets/brands/idea.png" alt="Brand">
+            </div>
+            <div class="brand-content-text">
+              <h5 routerLink="/shop-profile/{{brand.shopid}}">{{brand.shopname}}</h5>
+              <p class="branch-brand">{{brand.catname}}</p>
+              <p class="address-brand">{{brand.address}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end new brands section -->
+<hr>
+<!-- start offers section -->
+<section class="offers" id="offers">
+  <div class="container">
+    <h3 class="head-title">
+      <img src="assets/brands/sale.png" alt="Ads">
+      <span routerLink="/offers">Recent offers</span> 
+    </h3>
+    <hr>
+
+    <div class="row">
+      <div class="col-sm-6" *ngFor="let offer of offers">
+        <div class="offer-content">
+          <img src="assets/items/offers/fire.jpg" alt="offer wood">
+          <div class="overlay">
+           
+            <div class="over-content">
+              <div class="lover-offer">
+                  <span class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+              </div>
+              <div class="text-offer">
+                  <h3 routerLink="/offer/{{offer.offerid}}">{{offer.offername}}</h3>
+                  <span routerLink="/shop-profile/{{offer.shopId}}">{{offer.shopname}}</span><br>
+                  <span>{{offer.address}}</span>
+              </div>
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- end offers section -->
+<hr>
+<!-- start latest items section -->
+<section class="latest-item" id="lastItems">
+  <div class="container">
+    <h3 class="head-title">
+      <img src="assets/brands/list.png" alt="Ads">
+      <span routerLink="items">Latest items</span> 
+    </h3>
+    <hr>
+
+    <div class="row">
+
+
+      <div class="col-md-4 col-sm-6" *ngFor="let item of items">
+        <div class="thumbnail">
+          <div class="price">
+            <div class="total-price">
+              
+              <span>{{item.price}}</span>
+              <span>200$</span>
+            </div>
+          </div>
+          <div class="discount">
+            <span>Discount 50%</span>
+          </div>
+          <img src="assets/items/Toys.jpg" alt="item">
+          <div class="caption">
+            <h3 routerLink="item/{{item.itemid}}">{{item.itemname}}</h3>
+            <p>{{item.shopname}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<hr>
+<!-- end items section -->
+
+<!-- abdout section -->
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+          <p>Sahl is a site that provides an easy and quick service that makes the user have a dynamic and easy way to access the products he wants</p>
+          <p>you want to publish your products ? just contact us !</p>
+
+          <span>Know all information before going to shopping</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-footer></app-footer>

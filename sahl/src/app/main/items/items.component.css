@@ -1,0 +1,88 @@
+/*********** start framework **********/
+.head-title {
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 550;
+}
+.head-title  img {
+    width: 45px;
+    margin-right: 15px;
+}
+/************ End framework **********/
+/************************** latest otem *************************************/
+.latest-item {
+    margin-top: 0px;
+}
+
+
+.latest-item .row > div h3 {
+    color: #008329;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.latest-item .row > div p {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+.latest-item .row > div .price,
+.latest-item .row > div .discount {
+    position: absolute;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.latest-item .row > div .price {
+    bottom: 50px;
+    right: 20px;
+}
+.latest-item .row > div .price span {
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+.latest-item .row > div .price span:first-child {
+    background: #eeeeee;
+    margin: 0px 10px;
+}
+.latest-item .row > div .price span:last-child {
+    background: #cccccc;
+    text-decoration: line-through;
+}
+
+.latest-item .row > div .discount {
+    top: 5px;
+    right: 20px;
+    background: #008329;
+    padding: 10px 20px;
+    color: #ffffff;
+}
+.latest-item .row > div img {
+    height: 250px;
+    width: 100%;
+}
+/*************************** latest item ************************************/
+.cats {
+    margin-top: 20px;
+}
+
+.cats .catgs > div {
+    background: #eeeeee;
+    border-radius: 10px;
+    padding: 10px 40px;
+    cursor: pointer;
+    float: left;
+    min-width: 15%;
+    margin-bottom: 10px;
+    margin-right: 2%;
+}
+.cats .catgs > div:last-child {
+    margin-right: 0;
+}
+.cats img {
+    width: 30px;
+    margin-right: 10px;
+}

@@ -1,0 +1,45 @@
+<div class="content-shop-update-info">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-side-shop></app-side-shop>
+    </div>
+    <div class="col-sm-9">
+      <app-header-shop></app-header-shop>
+
+      <div class="container">
+        <h3 class="head-title"> <span>-</span> Update shop information</h3>
+        <form [formGroup]="updateInfoForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Shop name" formControlName="shopName">
+            </div>
+            <div class="col-sm-6">
+                <input type="text" class="form-control" placeholder="Shop Address" formControlName="shopAddress">
+            </div>
+            <div class="col-sm-6">
+                <input type="number" class="form-control" placeholder="Phone number" formControlName="shopPhone">
+            </div>
+            <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Shop Category" formControlName="shopCat">
+            </div>
+            <div class="col-sm-12">
+                <textarea class="form-control" placeholder="Shop description" formControlName="shopDesc"></textarea>
+            </div>
+            <div class="col-sm-12">
+              <label for="shopImage">Shop Image</label>
+                <input type="file" class="form-control" name="shopImage" formControlName="shopImage"> 
+            </div>
+
+            <div class="col-sm-12">
+                <button>Update Information</button>
+              </div>
+          </div>
+          
+        </form>
+      </div>
+
+      <app-footer-shop></app-footer-shop>
+    </div>
+  </div>
+
+</div>

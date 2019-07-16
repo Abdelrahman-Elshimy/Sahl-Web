@@ -1,0 +1,50 @@
+<div class="content-shop-add-product">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-side-shop></app-side-shop>
+    </div>
+    <div class="col-sm-9">
+      <app-header-shop></app-header-shop>
+
+        <div class="container">
+          <h3 class="head-title"> <span>+</span> Add New Product</h3>
+          <form [formGroup]="addProductForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-sm-12">
+                  <input type="text" class="form-control" placeholder="Product name" formControlName="itemName">
+              </div>
+              <div class="col-sm-6">
+                  <input type="number" class="form-control" placeholder="Product count" formControlName="itemCount">
+              </div>
+              <div class="col-sm-6">
+                  <input type="number" [(ngModel)]="price" class="form-control" placeholder="Product price" formControlName="itemPrice">
+              </div>
+              <div class="col-sm-6">
+                  <input type="number" [(ngModel)]="discount" class="form-control" placeholder="Product discount" formControlName="itemDiscount">
+              </div>
+              <div class="col-sm-6">
+                  <input type="number" [(ngModel)]="totalPrice" class="form-control" placeholder="Total price" formControlName="itemTotal">
+              </div>
+
+              <div class="col-sm-12">
+                  <textarea class="form-control" placeholder="Product description" formControlName="itemDesc"></textarea>
+              </div>
+              <div class="col-sm-12">
+                <label for="productImage">Product Image</label>
+                  <input type="file" class="form-control" name="productImage" formControlName="itemImage"> 
+              </div>
+              <div class="col-sm-12" *ngIf="!addProductForm.valid && addProductForm.touched">
+                <span>Please Enter All Fields</span>
+              </div>
+              <div class="col-sm-12">
+                  <button>Add Product</button>
+                </div>
+            </div>
+            
+          </form>
+        </div>
+      <app-footer-shop></app-footer-shop>
+    </div>
+  </div>
+
+</div>

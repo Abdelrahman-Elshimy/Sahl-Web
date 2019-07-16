@@ -1,0 +1,106 @@
+.col-sm-3, .col-sm-9 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*************************** Products **************************/
+.content-shop-loves .search-product{
+    padding: 30px 50px 30px 30px;
+}
+
+.content-shop-loves .items {
+    padding: 0px 50px 30px 30px;
+}
+.content-shop-loves .items .one-item {
+    border: 1px solid #dddddd;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    padding: 0px 10px;
+}
+.content-shop-loves .items .one-item h5 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-size: 18px;
+    color: #008329;
+}
+
+.content-shop-loves .items .one-item span.loves {
+    color: #cccccc;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    font-size: 18px;
+}
+.content-shop-loves .items .one-item span.loves span {
+    color: #aaaaaa;
+}
+.content-shop-loves .items .item {
+    display: flex;
+}
+
+.content-shop-loves .items .item .item-img {
+    overflow: hidden;
+    padding: 10px;
+}
+
+.content-shop-loves .items .item .item-img img {
+    width: 90px;
+    border-radius: 50%;
+    height: 90px;
+}
+
+.content-shop-loves .items .item .item-info {
+    padding-top: 20px;
+    padding-left: 5px;
+}
+.content-shop-loves .items .item .item-info .info-item span{
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+.content-shop-loves .items .item .item-info .info-item span:first-child {
+    background: #eeeeee;
+}
+.content-shop-loves .items .item .item-info .info-item span:nth-child(2) {
+    background: #aaaaaa;
+    text-decoration: line-through;
+}
+.content-shop-loves .items .item .item-info .info-item span:last-child {
+    background: #008329;
+    color: #eeeeee;
+}
+
+.content-shop-loves .items .item .item-info .item-ops {
+    margin-top: 20px;
+}
+.content-shop-loves .items .item .item-info .item-ops > span {
+    margin-right: 10px;
+}
+
+
+.content-shop-loves .shop-products-options {
+    background: #eeeeee;
+    width: 300px;
+    position: fixed;
+    height: 1000px;
+    top: 0;
+    right: 0;
+    z-index: 999999999999;
+    padding: 20px;
+    display: none;
+}
+
+.content-shop-loves .shop-products-options h5 {
+    font-size: 18px;
+}
+
+.content-shop-loves .shop-products-options .operations > div {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.content-shop-loves .shop-products-options .operations > div span {
+    margin-right: 10px;
+}

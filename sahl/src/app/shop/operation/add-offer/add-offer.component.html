@@ -1,0 +1,45 @@
+<div class="content-shop-add-offer">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-side-shop></app-side-shop>
+    </div>
+    <div class="col-sm-9">
+      <app-header-shop></app-header-shop>
+
+      <div class="container">
+        <h3 class="head-title"> <span>+</span> Add New Offer</h3>
+        <form [formGroup]="addOfferForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-sm-12">
+                <input type="text" class="form-control" placeholder="Offer name" formControlName="offerName">
+            </div>
+            <div class="col-sm-6">
+                <input type="number" [(ngModel)]="offerprice" class="form-control" placeholder="Offer price" formControlName="offerPrice">
+            </div>
+            <div class="col-sm-6">
+                <input type="number" [(ngModel)]="offerNewPrice" class="form-control" placeholder="New price" formControlName="offerNewPrice">
+            </div>
+
+            <div class="col-sm-12">
+                <textarea class="form-control" placeholder="Offer description" formControlName="offerDesc"></textarea>
+            </div>
+            <div class="col-sm-12">
+              <label for="offerImage">Product Image</label>
+                <input type="file" class="form-control" name="offerImage" formControlName="offerImage">
+            </div>
+            <div class="col-sm-12" *ngIf="!addOfferForm.valid && addOfferForm.touched">
+              <span>Please Enter All Fields</span>
+            </div>
+            <div class="col-sm-12">
+                <button>Add Offer</button>
+              </div>
+          </div>
+          
+        </form>
+      </div>
+
+      <app-footer-shop></app-footer-shop>
+    </div>
+  </div>
+
+</div>

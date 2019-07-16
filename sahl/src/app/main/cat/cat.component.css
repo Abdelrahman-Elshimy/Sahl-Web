@@ -1,0 +1,58 @@
+.cats {
+    padding: 30px 0;
+}
+.cats .cats-clothes {
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.cats .cats-clothes > div{
+    padding: 15px 10px;
+    border: 1px solid #cccccc;
+    border-top: none;
+}
+.cats .cats-clothes > div:first-child {
+    background: #008329;
+    color: #ffffff;
+    cursor: pointer;
+    border: 1px solid #008329;
+}
+.cats .cats-clothes > div:first-child span {
+    font-size: 16px;
+}
+.cats .cats-clothes > div span {
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    font-size: 15px;
+}
+.cats .cats-clothes > div span:hover {
+    margin-left: 5px;
+}
+
+
+.cats .shop {
+    display: flex;
+    border: 1px solid #dddddd;
+    border-radius: 7px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.cats .shop img {
+    width: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    height: 70px;
+}
+
+.cats .shop h5 {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+}
+.cats .shop p {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+.cats .shop span {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}

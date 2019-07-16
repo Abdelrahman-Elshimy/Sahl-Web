@@ -1,0 +1,121 @@
+/*********** start framework **********/
+.head-title {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 550;
+    margin-bottom: 40px;
+}
+
+/************ End framework **********/
+.offer {
+    margin: 40px 0;
+}
+
+.offer .slider-image-offer {
+    /* padding: 5px; */
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.offer .slider-image-offer .img-offer {
+    display: none;
+    height: 400px;
+    padding: 5px;
+}
+.offer .slider-image-offer .img-offer.active {
+    display: block;
+}
+.offer .slider-image-offer .img-offer img {
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.offer .desc p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.offer .desc span {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.offer .prices {
+    margin: 20px 0;
+}
+.offer .prices span {
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+.offer .prices span:first-child {
+    background: #eeeeee;
+    margin-right: 10px;
+}
+.offer .prices span:last-child {
+    background: #cccccc;
+    text-decoration: line-through;
+}
+.offer .loves {
+    margin: 50px 0;
+}
+.offer .loves span {
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+.offer .loves > span {
+    margin-right: 10px;
+    padding: 12px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+}
+.offer .loves > span:first-child {
+    background: #f00;
+}
+.offer .loves > span:last-child {
+    background: #008329;
+}
+.offer .loves > span span {
+    margin: 0px 5px; 
+}
+
+/* comments */
+.comments {
+    margin-bottom: 20px;
+}
+
+.comments .img-profile p{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    cursor: pointer;
+}
+.comments .img-profile img {
+    width: 104px;
+    border-radius: 50%;
+    height: 104px;
+    border: 1px solid #cccccc;
+    padding: 1px;
+
+}
+.comments .comment .rate{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+.comments .comment .rate span {
+    font-size: 18px;
+    color: #F0D25D;
+}
+.comments .comment button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #008329;
+    color: #ffffff;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    border-radius: 5px;
+}

@@ -1,0 +1,127 @@
+/*********** start framework **********/
+.head-title {
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    font-weight: 550;
+    margin-bottom: 40px;
+}
+
+/************ End framework **********/
+.item {
+    margin: 40px 0;
+}
+
+.item .slider-image-item {
+    /* padding: 5px; */
+    border: 1px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.item .slider-image-item .img-item {
+    /* display: none; */
+    height: 400px;
+    padding: 5px;
+}
+.item .slider-image-item .img-item.active {
+    display: block;
+}
+.item .slider-image-item .img-item img {
+    width: 100%;
+    max-height: 100%;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.item .slider-image-item .img-item {
+    display: none;
+}
+.item .slider-image-item .img-item.active {
+    display: block;
+}
+.item .desc p {
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+.item .desc span {
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+.item .prices {
+    margin: 20px 0;
+}
+.item .prices span {
+    padding: 7px 20px;
+    border-radius: 5px;
+}
+.item .prices span:first-child {
+    background: #eeeeee;
+    margin-right: 10px;
+}
+.item .prices span:last-child {
+    background: #cccccc;
+    text-decoration: line-through;
+}
+.item .loves {
+    margin: 50px 0;
+}
+.item .loves span {
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 16px;
+    
+}
+.item .loves > span {
+    margin-right: 10px;
+    padding: 12px 30px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+}
+.item .loves > span:first-child {
+    background: #f00;
+}
+.item .loves > span:last-child {
+    background: #008329;
+}
+.item .loves > span span {
+    margin: 0px 5px; 
+}
+
+/* comments */
+.comments {
+    margin-bottom: 20px;
+}
+
+.comments .img-profile p{
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    cursor: pointer;
+}
+.comments .img-profile img {
+    width: 104px;
+    border-radius: 50%;
+    height: 104px;
+    border: 1px solid #cccccc;
+    padding: 1px;
+
+}
+.comments .comment .rate{
+    position: absolute;
+    bottom: 60px;
+    right: 30px;
+}
+.comments .comment .rate span {
+    font-size: 18px;
+    color: #F0D25D;
+}
+.comments .comment button {
+    margin-top: 10px;
+    padding: 10px 30px;
+    background: #008329;
+    color: #ffffff;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Nova Flat', cursive;
+    border-radius: 5px;
+}

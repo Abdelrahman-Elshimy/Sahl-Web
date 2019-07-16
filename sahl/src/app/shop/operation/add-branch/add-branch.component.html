@@ -1,0 +1,40 @@
+<div class="content-shop-add-branch">
+  <div class="row">
+    <div class="col-sm-3">
+      <app-side-shop></app-side-shop>
+    </div>
+    <div class="col-sm-9">
+      <app-header-shop></app-header-shop>
+
+
+      <div class="container">
+        <h3 class="head-title"> <span>+</span> Add New Branch</h3>
+        <form [formGroup]="addBranchForm" (ngSubmit)="onSubmit()">
+          <div class="row">
+            <div class="col-sm-12">
+              <input type="text" class="form-control" placeholder="Branch Name" formControlName="branchName">
+            </div>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" placeholder="Branch Address" formControlName="branchAddress">
+            </div>
+            <div class="col-sm-12">
+              <input type="number" [(ngModel)]="price" class="form-control" placeholder="Mobile Phone"
+                formControlName="branchPhone">
+            </div>
+            <div class="col-sm-12">
+              <input type="text" class="form-control" placeholder="Branch Field" formControlName="branchField">
+            </div>
+
+            <div class="col-sm-12">
+              <button>Add Branch</button>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <app-footer-shop></app-footer-shop>
+    </div>
+  </div>
+
+</div>
